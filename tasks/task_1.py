@@ -7,7 +7,7 @@ if 20 <= age and is_admin == "false":
 if 19 >= age:
     print("Доступ запрещён")
 
-if 20 < age and is_admin == "true":
+if 20 <= age and is_admin == "true":
     print("Доступ разрешён. Добро пожаловать администратор!")
 
 
