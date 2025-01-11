@@ -7,5 +7,3 @@ elif 20 <= age and is_admin == "false":
     print("Доступ разрешён")
 else :
     print("Доступ запрещён")
-
-
