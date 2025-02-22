@@ -1,27 +1,19 @@
 import random
-камннь = 1
-ножницы = 2
-бумага = 3
-random_number = random.randint( 1, 2, 3  )
-знак = input("Выберите: камннь, ножницы или бумага: ")
-print(f"Компютер выбрал:{random_number}")
-if знак == камннь and random_number == камннь:
+sign = input("Выбирете: камень, ножницы или бумага  ")
+random_sign = random.randint( 1, 3 )
+if random_sign == 1:
+    random_sign = "камень"
+elif random_sign == 2:
+    random_sign = "ножницы"
+elif random_sign == 3:
+    random_sign = "бумага"
+print(f"Комьютер выбрал: {random_sign}")
+print(f"Я выбрал: {sign}")
+if sign == random_sign:
     print("Ничья!")
-elif знак == камннь and random_number == бумага:
+elif ((sign == "камень" and random_sign == "бумага") 
+    or (sign == "ножницы" and random_sign == "камень") 
+    or (sign == "бумага" and random_sign == "ножницы")):
     print("Вы проиграли!")
-elif знак == камннь and random_number == ножницы:
-    print("Вы выграли!")
-elif знак == ножницы and random_number == ножницы:
-    print("Ничья!")
-elif знак == ножницы and random_number == камннь:
-    print("Вы проиграли!")
-elif знак == ножницы and random_number == бумага:
-    print("Вы выграли!")
-elif знак == бумага and random_number == бумага:
-    print("Ничья!")
-elif знак == бумага and random_number == ножницы:
-    print("Вы проиграли!")
-elif знак == бумага and random_number == камннь:
-    print("Вы выграли!")
 else:
-    print("Вы проиграли!")
+    print("Вы выиграли!")
