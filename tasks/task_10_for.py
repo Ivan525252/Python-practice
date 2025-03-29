@@ -1,2 +1,4 @@
-for x in range( 10000 ):
- print(x)
+x = 0 
+for i in range(10):
+ print("x:")
+ print(i)
