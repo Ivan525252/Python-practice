@@ -1,4 +1,3 @@
-x = 1
-for i in range(1, 10):
-    x = x * i
-print(x)
+
+for i in range(1, 11):
+  print(i * i)
